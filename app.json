@@ -1,0 +1,51 @@
+{
+   "name":"DSC-UserBot",
+   "description":"A Userbot Based On Telethon By Project DSC",
+   "logo":"https://telegra.ph/file/a03adb69c387eec6e4f75.jpg",
+   "keywords":[
+      "telegram",
+      "userbot",
+      "plugin",
+      "modular",
+      "productivity"
+   ],
+   "repository":"https://github.com/APXD-git/DSC",
+   "website":"https://dscvit.com/",
+   "success_url":"t.me/AP_XD",
+   "stack":"container",
+   "env":{
+      "ENV":{
+         "description":"Setting this to ANYTHING will enable heroku.",
+         "value":"ANYTHING"
+      },
+      "TEMP_DOWNLOAD_DIRECTORY":{
+         "description":"Where downloaded files will go.",
+         "value":"./dsc/DOWNLOADS/",
+         "required":false
+      },
+      "API_ID":{
+         "description":"Get this value from my.telegram.org or @usetgxbot. Please do not steal",
+         "value":""
+      },
+      "API_HASH":{
+         "description":"Get this value from my.telegram.org or @usetgxbot. Please do not steal",
+         "value":""
+      },
+      "SESSION":{
+         "description":"Get this value by running python3 telesetup.py locally",
+         "value":""
+      },
+      "BOT_TOKEN":{
+         "description":"Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+         "value":""
+      }
+   },
+   "addons":[
+      {
+         "plan":"heroku-postgresql",
+         "options":{
+            "version":"12"
+         }
+      }
+   ]
+}

@@ -1,0 +1,1 @@
+dsc: python -m dsc
