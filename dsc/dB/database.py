@@ -1,3 +1,4 @@
+
 # we save the vars here // remove this line later
 import os
 
@@ -10,3 +11,4 @@ class Var(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     SESSION = os.environ.get("SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL", None)
+    TMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
