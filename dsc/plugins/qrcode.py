@@ -59,7 +59,7 @@ async def _(ap):
     await ap.edit(qr_contents)
 
 
-@dsc.on(events.NewMessage(pattern="^.mkqr", outgoing=True))
+@dsc.on(events.NewMessage(pattern="^.mkqr ?(.*)", outgoing=True))
 async def _(ap):
     if ap.fwd_from:
         return
